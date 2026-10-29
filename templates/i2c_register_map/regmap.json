@@ -1,0 +1,4 @@
+{"_about": "I2C device register names + the accesses the firmware must make, in order. Edit for your device.",
+ "map": {"SCL": "SCL", "SDA": "SDA"}, "speed": "fast",
+ "address": "0x76", "registers": {"0xD0": "id", "0xE0": "reset", "0xF4": "ctrl_meas", "0xF5": "config", "0xFA": "temp_msb"},
+ "expect": [["write", "reset", "B6"], ["read", "id", "60"], ["write", "ctrl_meas", "25"]]}

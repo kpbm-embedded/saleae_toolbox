@@ -1,0 +1,20 @@
+{
+  "_about": "Logic 2 analyzer settings for the owned boards: pass name + settings to Capture.add_analyzer(). Channel numbers are the analyser's inputs.",
+  "arduino_nano_uart": {"board": "Arduino Nano (ATmega328P) D1/TX", "sample_rate": 4000000, "channels": [0],
+    "analyzer": "Async Serial", "settings": {"Input Channel": 0, "Bit Rate (Bits/s)": 115200,
+      "Bits per Frame": "8 Bits per Transfer (Standard)", "Stop Bits": "1 Stop Bit (Standard)",
+      "Parity Bit": "No Parity Bit (Standard)", "Significant Bit": "Least Significant Bit Sent First (Standard)",
+      "Signal inversion": "Non Inverted (Standard)", "Mode": "Normal"}},
+  "blackpill_spi1": {"board": "BlackPill STM32F411CE SPI1 PA4/PA5/PA6/PA7", "sample_rate": 50000000, "channels": [0, 1, 2, 3],
+    "analyzer": "SPI", "settings": {"MISO": 2, "Clock": 1, "Enable": 0, "MOSI": 3,
+      "Significant Bit": "Most Significant Bit First (Standard)", "Bits per Transfer": "8 Bits per Transfer (Standard)",
+      "Clock State": "Clock is Low when inactive (CPOL = 0)", "Clock Phase": "Data is Valid on Clock Leading Edge (CPHA = 0)",
+      "Enable Line": "Enable line is Active Low (Standard)"}},
+  "pico_i2c0": {"board": "Raspberry Pi Pico (RP2040) I2C0 GP4 SDA / GP5 SCL", "sample_rate": 10000000, "channels": [0, 1],
+    "analyzer": "I2C", "settings": {"SDA": 0, "SCL": 1}},
+  "esp32s3_uart0": {"board": "ESP32-S3 DevKitC-1 UART0 TX (GPIO43)", "sample_rate": 4000000, "channels": [0],
+    "analyzer": "Async Serial", "settings": {"Input Channel": 0, "Bit Rate (Bits/s)": 115200,
+      "Bits per Frame": "8 Bits per Transfer (Standard)", "Stop Bits": "1 Stop Bit (Standard)",
+      "Parity Bit": "No Parity Bit (Standard)", "Significant Bit": "Least Significant Bit Sent First (Standard)",
+      "Signal inversion": "Non Inverted (Standard)", "Mode": "Normal"}}
+}

@@ -1,0 +1,2 @@
+{"_about": "PWM output spec: frequency and duty with tolerances, max period jitter",
+ "channel": "PWM", "freq_hz": 20000, "freq_tol": 0.01, "duty": 0.25, "duty_tol": 0.01, "jitter_max_s": 50e-9}

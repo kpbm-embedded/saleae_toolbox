@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "apiVersion": "1.0.0",
+  "author": "",
+  "description": "@NAME@: text lines from an Async Serial analyzer",
+  "name": "@NAME@",
+  "extensions": {
+    "@NAME@": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.Hla"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "_about": "@NAME@: Logic 2 analyzer settings for one board. Channel numbers are the analyser's inputs; 'pins' says what to clip where. Pass name + settings to Capture.add_analyzer().",
+  "@NAME@_uart": {"board": "@NAME@ UART TX", "pins": {"0": "UART TX"}, "sample_rate": 4000000, "channels": [0],
+    "analyzer": "Async Serial", "settings": {"Input Channel": 0, "Bit Rate (Bits/s)": 115200}},
+  "@NAME@_spi": {"board": "@NAME@ SPI", "pins": {"0": "CS", "1": "SCK", "2": "MISO", "3": "MOSI"}, "sample_rate": 50000000, "channels": [0, 1, 2, 3],
+    "analyzer": "SPI", "settings": {"Enable": 0, "Clock": 1, "MISO": 2, "MOSI": 3, "max_clock_hz": 10000000}},
+  "@NAME@_i2c": {"board": "@NAME@ I2C", "pins": {"4": "SDA", "5": "SCL"}, "sample_rate": 10000000, "channels": [4, 5],
+    "analyzer": "I2C", "settings": {"SDA": 4, "SCL": 5, "max_clock_hz": 400000}}
+}

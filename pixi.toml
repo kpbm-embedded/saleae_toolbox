@@ -1,0 +1,17 @@
+# 32_16_saleae pixi env (managed by ./saleae-box, see README.md): Python + Saleae's open-source
+# logic2-automation API (PyPI, Apache-2.0; grpcio + protobuf). Pinned by pixi.lock; env in ./.pixi,
+# package caches in ./cache. Logic 2 itself is proprietary and NOT here: it comes from
+# config/licensed.tsv only via `./saleae-box install --accept-license`.
+[workspace]
+name = "saleae_box"
+channels = ["conda-forge"]
+platforms = ["linux-64", "linux-aarch64", "osx-64", "osx-arm64", "win-64"]
+
+[dependencies]
+python = "3.12.*"
+grpcio = "1.*"
+protobuf = "*"
+pytest = "8.*"
+
+[pypi-dependencies]
+logic2-automation = "==1.0.11"

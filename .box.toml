@@ -1,0 +1,32 @@
+id = "32_16"
+name = "saleae"
+kind = "tool"
+status = "active"
+tags = ["embedded"]
+
+[backup]
+tier = "critical"
+
+[tool]
+name = "saleae"
+launcher = "saleae-box"
+aliases = ["saleae-box"]
+env_var = "BOX_SALEAE"
+env_path = "."
+native = "native/native.zsh"
+native_provides = ["Logic2", "saleae-parse", "saleae-python", "saleae-decode"]
+native_off_compat = ["SALEAE_BOX_NATIVE_OFF"]
+network = ["bootstrap", "install", "update"]
+
+[scripts.saleae-box]
+schema = 1
+kind = "launcher"
+path = "saleae-box"
+summary = "Saleae Logic 2 AppImage (proprietary: the user accepts the EULA) + logic2-automation Python API (pixi env)."
+interpreter = "sh"
+commands = ["help", "where", "bootstrap", "install", "update", "clean", "status", "doctor", "shell", "run", "test", "new", "examples", "native", "relocate", "pack", "licence", "license", "logic2", "python", "parse", "decode", "convert", "hla", "automation-ping", "list"]
+flags = ["--accept-license", "--all", "--automation", "--check", "--dir", "--dry-run", "--env", "--force", "--help", "--no-demos", "--out", "--print", "--uart", "--with-cache", "--yes"]
+reads = { global = ["BOXT_DRY_RUN", "BOX_EMBEDDED_RUST", "BOX_MICROZIG"] }
+dry_run_flag = "--dry-run"
+apply_flag = { clean = "--yes" }
+scope = "global"

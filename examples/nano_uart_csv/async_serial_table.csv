@@ -1,0 +1,13 @@
+name,type,start_time,duration,"data",error
+"Async Serial","data",0.001000000,0.0000868,0x68,
+"Async Serial","data",0.0010955,0.0000868,0x65,
+"Async Serial","data",0.0011910,0.0000868,0x6C,
+"Async Serial","data",0.0012865,0.0000868,0x6C,
+"Async Serial","data",0.0013820,0.0000868,0x6F,
+"Async Serial","data",0.0014775,0.0000868,0x20,
+"Async Serial","data",0.0015730,0.0000868,0x6E,
+"Async Serial","data",0.0016685,0.0000868,0x61,
+"Async Serial","data",0.0017640,0.0000868,0x6E,
+"Async Serial","data",0.0018595,0.0000868,0x6F,
+"Async Serial","data",0.0019550,0.0000868,0x0D,
+"Async Serial","data",0.0020505,0.0000868,0x0A,

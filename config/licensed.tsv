@@ -1,0 +1,7 @@
+# 32_16_saleae licensed download (tab separated). NOT config/pins.tsv: `bootstrap` never fetches it.
+# Only `./saleae-box install --accept-license` (the user accepts the Saleae licence) downloads it.
+# URL: what https://logic2api.saleae.com/download?os=linux&arch=x64 redirected to on 2026-10-25 (212,724,216 bytes,
+# Last-Modified 2026-10-07). Saleae publishes no checksum: digest "-" = sha256 pinned on first download in
+# config/pins.local.tsv (TOFU) and checked on every later install.
+# name	version	platform	digest	url	licence-urls	title
+logic2	2.4.48	linux-x64	-	https://downloads2.saleae.com/logic2/Logic-2.4.48-linux-x64.AppImage	https://support.saleae.com/faq/general-faq/license https://www.saleae.com/policies/terms-of-service	Saleae Logic 2 AppImage, 212.7 MB

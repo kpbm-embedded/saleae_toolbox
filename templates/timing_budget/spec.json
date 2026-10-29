@@ -1,0 +1,3 @@
+{"_about": "edge-to-edge latency budget, e.g. IRQ pin -> response pin, or GPIO in -> GPIO out on a Linux board",
+ "src": "IN", "dst": "OUT", "src_edge": "rising", "dst_edge": "rising",
+ "percentile": 99, "budget_s": 100e-6, "hard_max_s": 500e-6, "min_samples": 50}

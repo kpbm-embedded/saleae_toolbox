@@ -1,0 +1,28 @@
+# saleae-box: only sources go into git. Everything below is downloaded, solved or produced again by
+# ./saleae-box bootstrap | install | examples test (pins: pixi.toml + pixi.lock, pixi sha256 in saleae-box).
+# Logic 2 is proprietary: the AppImage is fetched only by `install --accept-license` and never committed.
+/.bin/
+/.pixi/
+/cache
+/install/
+/native/
+/build/
+/log/
+/logs/
+/config/local.env
+/config/local-licence.txt
+/config/pins.local.tsv
+*.AppImage
+*.AppImage.part
+*.part
+*.sal
+*.tar.zst
+*.tar.gz
+*.tgz
+__pycache__/
+*.pyc
+.pytest_cache/
+.zig-cache/
+zig-out/
+/target/
+*.log

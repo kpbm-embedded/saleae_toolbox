@@ -1,0 +1,2 @@
+{"_about": "WS2812/SK6812 strip check: data channel, pixel count and (optional) expected colours as [r,g,b]",
+ "channel": "DIN", "pixels": 8, "expect": [[255, 0, 0], [0, 255, 0], [0, 0, 255]]}

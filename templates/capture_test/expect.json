@@ -1,0 +1,2 @@
+{"_about": "what the capture must show: UART text on one channel (edit for your board)",
+ "channel": "Channel 0", "baud": 115200, "text": "@NAME@ ready\r\n", "max_glitch_s": 1e-6}

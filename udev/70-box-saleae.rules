@@ -1,0 +1,8 @@
+# 70-box-saleae.rules: Saleae logic analysers for the logged-in user (written 2026-10-25 for
+# 32_16_saleae). Logic 2 ships its own 99-SaleaeLogic.rules inside the AppImage (after install:
+# find "$BOX_SALEAE/install/logic2/root" -name '*.rules'); either file is enough.
+ACTION=="remove", GOTO="box_saleae_end"
+SUBSYSTEM!="usb", GOTO="box_saleae_end"
+# Saleae LLC (Logic 4/8/Pro 8/Pro 16, Logic 8 2nd gen, Logic Pro 2nd gen)
+ATTRS{idVendor}=="21a9", MODE="660", TAG+="uaccess"
+LABEL="box_saleae_end"

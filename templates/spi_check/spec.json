@@ -1,0 +1,5 @@
+{"_about": "SPI transactions a capture must contain, in order. Hex strings; 'x' nibbles in miso are don't-care. Channel names as in the export.",
+ "map": {"CS": "Channel 0", "CLK": "Channel 1", "MISO": "Channel 2", "MOSI": "Channel 3"},
+ "mode": 0, "max_clock_hz": 25000000,
+ "expect": [{"mosi": "9f000000", "miso": "xxef4016", "what": "JEDEC ID W25Q32"},
+            {"mosi": "0500", "miso": "xx00", "what": "status: not busy"}]}

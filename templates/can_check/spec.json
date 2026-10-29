@@ -1,0 +1,4 @@
+{"_about": "CAN frames a capture must show: bitrate, channel and per-ID DLC and period. Edit for your bus.",
+ "channel": "CAN_RX", "bitrate": 500000,
+ "frames": {"0x123": {"dlc": 8, "period_ms": 10}, "0x18FF50E5": {"dlc": 4, "period_ms": 20, "extended": true}},
+ "period_tol": 0.1, "unknown_ids": "fail"}
