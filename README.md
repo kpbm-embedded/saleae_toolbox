@@ -132,8 +132,9 @@ Python templates: `saleae-box python -m pytest -q -p no:cacheprovider <name>`.
 Languages: Rust and Zig get examples and templates (capture parsers/decoders: host tests + cross builds, toolchains
 reached in 32_17/32_24). A Rust automation client is not included: logic2-automation is a gRPC API with a Python
 client only; a Rust client would need tonic/prost and the `.proto` from the Saleae repo (crate downloads), not done.
-BEAM (Erlang/Elixir/Gleam on AtomVM): not supported, because this ID analyses captures on the host and AtomVM runs on
-the MCU; there is no Saleae client or capture format for it, and an Erlang decoder would only duplicate the Python ones.
+Bend 2: not supported yet, because its toolchain ID (32_31_bend) does not exist here, so a Bend decoder or CRC law could
+not be checked, and boxtool's `examples test` counts the skip (exit 3) as FAIL, so a Bend example would make `test --all`
+fail on a machine without 32_31.
 
 Formats: the Logic 2 binary export reader/writer follows Saleae's documented digital v0 layout and the `.sr` writer
 the sigrok session v2 layout; neither was checked against files written by Logic 2 or PulseView here.

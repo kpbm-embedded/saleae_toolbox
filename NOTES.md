@@ -36,8 +36,8 @@
   PWM, quadrature, I2S, SWD, glitches, deglitch, latency), tools/capfmt.py (Logic 2 CSV, VCD, Logic 2 binary
   digital v0, sigrok .sr v2), tools/logicsim.py (fixture waveforms), tools/hla_host.py (HLA host harness).
 - New commands: decode, convert, hla. Rust/Zig reached in 32_17_embedded_rust / 32_24_microzig
-  (BOX_EMBEDDED_RUST / BOX_MICROZIG, else the sibling folder); doctor reports them. BEAM: not added (host-side
-  capture analysis; no AtomVM fit).
+  (BOX_EMBEDDED_RUST / BOX_MICROZIG, else the sibling folder); doctor reports them. Bend 2: not added (see the
+  correction below).
 - 14 new examples (blackpill_spi_flash, g431_can_frames, pico_i2c_bme280_timing, nicenano_ws2812,
   ch32v003_onewire_ds18b20, h743_quadrature, esp32s3_servo_pwm, h562_swd_idcode, k210_i2s_mic, esp32c3_boot_uart,
   pico2_i2c_hla, yocto_gpio_latency, rust_capture_parser, zig_capture_parser) and 13 new templates (trigger_capture,
@@ -47,6 +47,12 @@
   glitches between sample points did not change a UART decode (example puts them on bit centres);
   Zig 0.17 has no `**` array repeat (`@splat`). boxtool counts example exit 3 as FAIL in `examples test`.
 - .gitignore: `/cache` without slash (a cache symlink in a clone is ignored too), *.AppImage, build/log, .pixi,
-  __pycache__, .zig-cache. Git repo created (main).
+  __pycache__, .zig-cache. Git repo saleae_toolbox (main).
 - Results: doctor 13 ok / 2 warn / 0 fail; examples 18/18 (live capture SKIP); smoke 17 ok / 2 skip;
   dry-run 35/35 (shellcheck); install logic 12/12.
+
+## 2026-10-29: correction: Bend 2, not BEAM
+- The third language is Bend 2, not BEAM. No BEAM files had been added; the README BEAM line is replaced by a Bend line.
+- No Bend example or template: 32_31_bend is not here (nothing to check the Bend code with; Bend not downloaded),
+  and boxtool's `examples test` counts exit 3 as FAIL, so a skipping Bend example would break `test --all`.
+- Repo name: saleae_toolbox.
